@@ -73,9 +73,9 @@ if (($erro_nome == '') && ($erro_email == '') && ($erro_mensagem == '')){
         $mail->Port       = 465;                                    
 
         //Recipients
-        $mail->setFrom('dani.b.g.castro@gmail.com', 'F1 Mania');
+        $mail->setFrom('', 'F1 Mania');
         $mail->addAddress("$email", "$nome");    
-        $mail->addReplyTo('dani.b.g.castro@gmail.com', 'Information');
+        $mail->addReplyTo('', 'Information');
         $mail->isHTML(true);                                  
         $mail->Subject = "Cadastro em F1 Mania!";
         $body = "Você enviou um feedback para F1 Mania, seguem aqui seus dados: 
